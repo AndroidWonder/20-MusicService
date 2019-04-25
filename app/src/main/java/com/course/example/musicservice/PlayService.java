@@ -53,7 +53,6 @@ public class PlayService extends Service {
 			
 				try {
 				//start audio
-				//mp.setDataSource("data/data/bobmarley.mp3");
 				mp.setDataSource("http://vprbbc.streamguys.net:80/vprbbc24.mp3");
 				mp.prepare();
 				mp.start();
