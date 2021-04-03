@@ -8,6 +8,7 @@ package com.course.example.musicservice;
 
 import android.app.Service;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.util.Log;
@@ -48,12 +49,14 @@ public class PlayService extends Service {
 	}
 	
 	Runnable background = new Runnable() {
-		MediaPlayer mp = new MediaPlayer();
+
 		public void run(){
-			
+			MediaPlayer mp = new MediaPlayer();
+			mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
 				try {
-				//start audio
-				mp.setDataSource("http://vprbbc.streamguys.net:80/vprbbc24.mp3");
+					//select BBC stream
+					mp.setDataSource("http://vprbbc.streamguys.net:80/vprbbc24.mp3");
 				mp.prepare();
 				mp.start();
 				} catch (IOException e) {};

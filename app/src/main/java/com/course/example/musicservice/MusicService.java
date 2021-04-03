@@ -31,7 +31,7 @@ public class MusicService extends Activity {
         
         //start service
         intentMyService = new Intent(this, PlayService.class);
-        service = startService(intentMyService);  
+        service = startService(intentMyService);
         
         txtMsg.setText("Service started");
         
