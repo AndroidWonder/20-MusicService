@@ -8,6 +8,7 @@ package com.course.example.musicservice;
 
 import android.app.Service;
 import android.content.Intent;
+import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.IBinder;
@@ -52,7 +53,11 @@ public class PlayService extends Service {
 
 		public void run(){
 			MediaPlayer mp = new MediaPlayer();
-			mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+			mp.setAudioAttributes(
+					new AudioAttributes
+							.Builder()
+							.setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+							.build());
 
 				try {
 					//select BBC stream
