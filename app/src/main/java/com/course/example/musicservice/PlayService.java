@@ -18,7 +18,7 @@ import java.io.IOException;
 public class PlayService extends Service {
 	
 	private final static String tag = "PlayService";
-	Thread music = null;
+	private Thread music = null;
 
 	@Override
 	public IBinder onBind(Intent arg0) {
@@ -40,8 +40,6 @@ public class PlayService extends Service {
 		Log.i (tag, "Service started");
 		return Service.START_NOT_STICKY;
 	}
-	
-	
 	@Override 
 	public void onDestroy() {
 		super.onDestroy();

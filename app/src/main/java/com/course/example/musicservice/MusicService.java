@@ -18,10 +18,10 @@ import android.widget.Toast;
 
 public class MusicService extends Activity {
 	
-	 	EditText txtMsg;
-	    Button btnStopService;
-	    ComponentName service;
-	    Intent intentMyService;
+	 	private EditText txtMsg;
+	    private Button btnStopService;
+	    private ComponentName service;
+	    private Intent intentMyService;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
