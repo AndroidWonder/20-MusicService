@@ -14,7 +14,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MusicService extends Activity {
 	
@@ -39,14 +38,10 @@ public class MusicService extends Activity {
         btnStopService = (Button) findViewById(R.id.btnStopService);
         btnStopService.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				try {
+
 					stopService(intentMyService);
 					txtMsg.setText("Service stopped: \n" + 
 							        service.getClassName());
-				} catch (Exception e) {
-					Toast.makeText(MusicService.this, e.getMessage(), Toast.LENGTH_LONG).show();
-				}
-				
 			}
         	
         });
