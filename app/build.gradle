@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 android {
     compileSdk 33
-    buildToolsVersion '33.0.1'
 
     defaultConfig {
         applicationId "com.course.example.musicservice"
@@ -16,6 +15,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+		namespace="com.course.example.musicservice"
 }
 
 dependencies {

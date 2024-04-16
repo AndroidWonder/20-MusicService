@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/20-MusicService.iml" filepath="$PROJECT_DIR$/20-MusicService.iml" group="20-MusicService" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="20-MusicService/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/20-MusicService.iml" filepath="$PROJECT_DIR$/.idea/modules/20-MusicService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/20-MusicService.app.unitTest.iml" />
     </modules>
   </component>
 </project>
